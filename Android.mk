@@ -49,7 +49,11 @@ font_src_files := \
     Roboto-Regular.ttf \
     Roboto-Bold.ttf \
     Roboto-Italic.ttf \
-    Roboto-BoldItalic.ttf
+    Roboto-BoldItalic.ttf \
+    RobotoOriginal-Regular.ttf \
+    RobotoOriginal-Bold.ttf \
+    RobotoOriginal-Italic.ttf \
+    RobotoOriginal-BoldItalic.ttf
 
 ifeq ($(MINIMAL_FONT_FOOTPRINT),true)
 
@@ -87,7 +91,15 @@ font_src_files += \
     RobotoCondensed-Light.ttf \
     RobotoCondensed-LightItalic.ttf \
     RobotoCondensed-Medium.ttf \
-    RobotoCondensed-MediumItalic.ttf
+    RobotoCondensed-MediumItalic.ttf \
+    RobotoOriginal-Black.ttf \
+    RobotoOriginal-BlackItalic.ttf \
+    RobotoOriginal-Light.ttf \
+    RobotoOriginal-LightItalic.ttf \
+    RobotoOriginal-Medium.ttf \
+    RobotoOriginal-MediumItalic.ttf \
+    RobotoOriginal-Thin.ttf \
+    RobotoOriginal-ThinItalic.ttf
 
 endif # !MINIMAL_FONT
 
