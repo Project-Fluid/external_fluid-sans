@@ -46,10 +46,10 @@ $(eval include $(BUILD_PREBUILT))
 endef
 
 font_src_files := \
-    Roboto-Regular.ttf \
-    Roboto-Bold.ttf \
-    Roboto-Italic.ttf \
-    Roboto-BoldItalic.ttf \
+    FluidSans-Regular.ttf \
+    FluidSans-Bold.ttf \
+    FluidSans-Italic.ttf \
+    FluidSans-BoldItalic.ttf \
     RobotoOriginal-Regular.ttf \
     RobotoOriginal-Bold.ttf \
     RobotoOriginal-Italic.ttf \
@@ -57,33 +57,33 @@ font_src_files := \
 
 ifeq ($(MINIMAL_FONT_FOOTPRINT),true)
 
-$(eval $(call create-font-symlink,Roboto-Black.ttf,Roboto-Bold.ttf))
-$(eval $(call create-font-symlink,Roboto-BlackItalic.ttf,Roboto-BoldItalic.ttf))
-$(eval $(call create-font-symlink,Roboto-Light.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,Roboto-LightItalic.ttf,Roboto-Italic.ttf))
-$(eval $(call create-font-symlink,Roboto-Medium.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,Roboto-MediumItalic.ttf,Roboto-Italic.ttf))
-$(eval $(call create-font-symlink,Roboto-Thin.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,Roboto-ThinItalic.ttf,Roboto-Italic.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-Regular.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-Bold.ttf,Roboto-Bold.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-Italic.ttf,Roboto-Italic.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-BoldItalic.ttf,Roboto-BoldItalic.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-Light.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-LightItalic.ttf,Roboto-Italic.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-Medium.ttf,Roboto-Regular.ttf))
-$(eval $(call create-font-symlink,RobotoCondensed-MediumItalic.ttf,Roboto-Italic.ttf))
+$(eval $(call create-font-symlink,FluidSans-Black.ttf,FluidSans-Bold.ttf))
+$(eval $(call create-font-symlink,FluidSans-BlackItalic.ttf,FluidSans-BoldItalic.ttf))
+$(eval $(call create-font-symlink,FluidSans-Light.ttf,FluidSans-Regular.ttf))
+$(eval $(call create-font-symlink,FluidSans-LightItalic.ttf,FluidSans-Italic.ttf))
+$(eval $(call create-font-symlink,FluidSans-Medium.ttf,FluidSans-Regular.ttf))
+$(eval $(call create-font-symlink,FluidSans-MediumItalic.ttf,FluidSans-Italic.ttf))
+$(eval $(call create-font-symlink,FluidSans-Thin.ttf,FluidSans-Regular.ttf))
+$(eval $(call create-font-symlink,FluidSans-ThinItalic.ttf,FluidSans-Italic.ttf))
+$(eval $(call create-font-symlink,RobotoCondensed-Regular.ttf,FluidSans-Regular.ttf))
+$(eval $(call create-font-symlink,RobotoCondensed-Bold.ttf,FluidSans-Bold.ttf))
+$(eval $(call create-font-symlink,RobotoCondensed-Italic.ttf,FluidSans-Italic.ttf))
+$(eval $(call create-font-symlink,RobotoCondensed-BoldItalic.ttf,FluidSans-BoldItalic.ttf))
+$(eval $(call create-font-symlink,RobotoCondensed-Light.ttf,FluidSans-Regular.ttf))
+$(eval $(call create-font-symlink,RobotoCondensed-LightItalic.ttf,FluidSans-Italic.ttf))
+$(eval $(call create-font-symlink,RobotoCondensed-Medium.ttf,FluidSans-Regular.ttf))
+$(eval $(call create-font-symlink,RobotoCondensed-MediumItalic.ttf,FluidSans-Italic.ttf))
 
 else # !MINIMAL_FONT
 font_src_files += \
-    Roboto-Black.ttf \
-    Roboto-BlackItalic.ttf \
-    Roboto-Light.ttf \
-    Roboto-LightItalic.ttf \
-    Roboto-Medium.ttf \
-    Roboto-MediumItalic.ttf \
-    Roboto-Thin.ttf \
-    Roboto-ThinItalic.ttf \
+    FluidSans-Black.ttf \
+    FluidSans-BlackItalic.ttf \
+    FluidSans-Light.ttf \
+    FluidSans-LightItalic.ttf \
+    FluidSans-Medium.ttf \
+    FluidSans-MediumItalic.ttf \
+    FluidSans-Thin.ttf \
+    FluidSans-ThinItalic.ttf \
     RobotoCondensed-Regular.ttf \
     RobotoCondensed-Bold.ttf \
     RobotoCondensed-Italic.ttf \
